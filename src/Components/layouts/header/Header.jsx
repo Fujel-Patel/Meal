@@ -20,7 +20,7 @@ function Header() {
   }, [menuOpen]);
 
   return (
-    <header className="fixed top-0 left-0 w-full z-50 bg-gradient-to-b from-black via-gray-900 to-black shadow-[0_8px_32px_0_rgba(234,179,8,0.25)] h-24 flex items-center px-2 sm:px-4 md:px-8 font-sans md:font-semibold text-base md:text-lg">
+    <header className="fixed top-0 left-0 w-full z-50 bg-black shadow-[0_8px_32px_0_rgba(234,179,8,0.25)] h-24 flex items-center px-2 sm:px-4 md:px-8 font-sans md:font-semibold text-base md:text-lg">
       {/* Logo Left */}
       <div className="flex items-center flex-shrink-0">
         <NavLink to="/">

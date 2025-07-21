@@ -5,7 +5,7 @@ import { AiOutlineHome, AiOutlineMail, AiOutlinePhone } from 'react-icons/ai';
 
 const Footer = () => {
   return (
-    <footer className="bg-gradient-to-r from-gray-900 via-black to-gray-900 text-yellow-100 py-10 px-4 shadow-xl border-t border-yellow-700 mt-auto">
+    <footer className="bg-black text-yellow-100 py-10 px-4 shadow-xl border-t border-yellow-700 mt-auto">
       <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12">
         
         {/* Logo and Description */}
