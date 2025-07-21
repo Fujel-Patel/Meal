@@ -1,6 +1,7 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { NavLink } from 'react-router-dom';
 import { useSelector } from 'react-redux';
+import { FaShoppingCart } from "react-icons/fa";
 
 function Header() {
   const cartItems = useSelector((store) => store.cart.items);
@@ -94,14 +95,6 @@ function Header() {
         >
           Sign In
         </NavLink>
-        <NavLink
-          to="/signup"
-          className={({ isActive }) =>
-            `px-3 sm:px-4 py-1.5 rounded-lg font-semibold tracking-wide transition-colors bg-gradient-to-r from-yellow-400 to-yellow-600 text-black shadow hover:from-yellow-500 hover:to-yellow-700 ${isActive ? 'ring-2 ring-yellow-400' : ''}`
-          }
-        >
-          Sign Up
-        </NavLink>
       </div>
 
       {/* Mobile menu button (three dots) */}
@@ -167,7 +160,7 @@ function Header() {
                 `block w-full text-center px-4 py-3 rounded-lg font-semibold text-lg transition-colors ${isActive ? 'text-yellow-400 bg-yellow-500/10' : 'text-gray-200 hover:text-yellow-400'}`
               }
             >
-              Cart
+              <FaShoppingCart />
               {cartItems.length > 0 && (
                 <span className="ml-2 bg-yellow-500 text-black text-xs font-bold rounded-full px-2 py-0.5">
                   {cartItems.length}
