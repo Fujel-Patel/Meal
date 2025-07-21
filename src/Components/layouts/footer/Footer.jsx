@@ -22,7 +22,7 @@ const Footer = () => {
             <li className="flex items-center justify-center sm:justify-start gap-2 group">
               <AiOutlineHome className="text-lg text-yellow-400" />
               <Link to="/about" className="text-yellow-100 group-hover:text-yellow-400 transition duration-300 text-sm md:text-base font-medium">
-                About Us
+                About
               </Link>
             </li>
             <li className="flex items-center justify-center sm:justify-start gap-2 group">
@@ -33,14 +33,8 @@ const Footer = () => {
             </li>
             <li className="flex items-center justify-center sm:justify-start gap-2 group">
               <AiOutlinePhone className="text-lg text-yellow-400" />
-              <Link to="/menu" className="text-yellow-100 group-hover:text-yellow-400 transition duration-300 text-sm md:text-base font-medium">
-                Menu
-              </Link>
-            </li>
-            <li className="flex items-center justify-center sm:justify-start gap-2 group">
-              <AiOutlineMail className="text-lg text-yellow-400" />
-              <Link to="/blog" className="text-yellow-100 group-hover:text-yellow-400 transition duration-300 text-sm md:text-base font-medium">
-                Blog
+              <Link to="/cart" className="text-yellow-100 group-hover:text-yellow-400 transition duration-300 text-sm md:text-base font-medium">
+                Cart
               </Link>
             </li>
           </ul>

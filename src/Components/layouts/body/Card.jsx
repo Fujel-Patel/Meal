@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { addItem } from '../../../features/cartSlice.js';
 import { FaShoppingCart, FaCheck } from 'react-icons/fa';
-import restaurant from './resData.js';
+// import restaurant from './resData.js';
 
 function Card(props) {
   const [added, setAdded] = useState(false);

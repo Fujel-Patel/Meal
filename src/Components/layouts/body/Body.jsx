@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from 'react';
 import Card from './Card.jsx';
 import Shimmer from './Shimmer.jsx';
@@ -7,7 +6,7 @@ import useFetch from '../../../Hooks/fetch.js';
 function Body() {
   const [search, setSearch] = useState("");
   const [restaurant, setRestaurant] = useState([]);
-  const url = import.meta.env.VITE_API_URL || 'https://dummyjson.com/c/824c-6179-4c86-97d0';
+  const url = import.meta.env.VITE_API_URL || 'https://dummyjson.com/c/e2ec-532e-4743-bfd1';
   const { data, loading, error } = useFetch(url);
 
   useEffect(() => {
@@ -36,11 +35,11 @@ function Body() {
             value={search}
             onChange={(e) => setSearch(e.target.value)}
             placeholder="Search for your favorite restaurant..."
-            className="flex-1 p-4 rounded-xl bg-black/40 text-yellow-200 placeholder-yellow-500/60 focus:outline-none focus:ring-2 focus:ring-yellow-500/40 transition-all duration-300 font-semibold tracking-wide text-lg"
+            className="flex-1 p-3 rounded-xl bg-black/40 text-yellow-200 placeholder-yellow-500/60 focus:outline-none focus:ring-2 focus:ring-yellow-500/40 transition-all duration-300 font-semibold tracking-wide text-base sm:text-lg"
             style={{ fontFamily: 'Inter, system-ui, sans-serif' }}
           />
           <button
-            className="px-6 py-3 rounded-xl bg-gradient-to-r from-yellow-400 to-yellow-600 text-black font-bold shadow-lg hover:shadow-yellow-600/25 hover:from-yellow-500 hover:to-yellow-700"
+            className="px-5 py-2 rounded-xl bg-gradient-to-r from-yellow-400 to-yellow-600 text-black font-bold shadow-lg hover:shadow-yellow-600/25 hover:from-yellow-500 hover:to-yellow-700 transition duration-300"
             onClick={handleClick}
           >
             <span className="relative">Top Rated</span>
