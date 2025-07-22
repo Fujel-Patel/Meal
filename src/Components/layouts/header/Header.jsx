@@ -43,9 +43,6 @@ function Header() {
 </div>
 
 
-
-
-
       {/* Center Nav (hidden on mobile) */}
       <nav className="flex-1 flex justify-center">
         <ul className="hidden md:flex flex-wrap items-center space-x-4 sm:space-x-6 md:space-x-10">
@@ -107,11 +104,6 @@ function Header() {
           }
         >
           <GrContact />
-          {cartItems.length > 0 && (
-            <span className="ml-1 bg-yellow-500 text-black hover:bg-amber-200 text-xs font-bold rounded-full px-2 py-0.5">
-              {cartItems.length}
-            </span>
-          )}
         </NavLink>
 
         <NavLink
