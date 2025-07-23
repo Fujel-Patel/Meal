@@ -7,6 +7,7 @@ import Cart from './Components/cart/Cart.jsx';
 import ErrorPage from './ErrorPage.jsx';
 import SignIn from './Components/auth/SignIn.jsx';
 import SignUp from './Components/auth/SignUp.jsx';
+import ForgotPassword from './Components/auth/ForgotPassword.jsx';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
           <Route path="/cart" element={<Cart />} />
           <Route path="/signin" element={<SignIn />} />
           <Route path="/signup" element={<SignUp />} />
+          <Route path="/forgotPassword" element={<ForgotPassword />} />
           <Route path="*" element={<ErrorPage />} />
         </Route>
       </Routes>

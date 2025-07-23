@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import { FaUserPlus } from 'react-icons/fa';
 
 const SignUp = () => {
@@ -8,10 +8,12 @@ const SignUp = () => {
   const [password, setPassword] = useState('');
   const [confirmPassword, setConfirmPassword] = useState('');
   const [error, setError] = useState('');
+  const [success, setSuccess] = useState('');
 
   const handleSubmit = (e) => {
     e.preventDefault();
     setError('');
+    setSuccess('');
     if (!name || !email || !password || !confirmPassword) {
       setError('Please fill in all fields');
       return;
@@ -22,6 +24,7 @@ const SignUp = () => {
     }
     // Placeholder for sign-up logic
     console.log('Sign Up:', { name, email, password });
+    setSuccess('You have signed up successfully.');
   };
 
   return (
@@ -38,11 +41,22 @@ const SignUp = () => {
               Sign In
             </Link>
           </p>
+          <p className="mt-2 text-sm text-gray-400">
+            Forgot your password?{' '}
+            <NavLink to="/forgotPassword" className="text-yellow-500 hover:text-yellow-400 transition-colors duration-300">
+              Reset Password
+            </NavLink>
+          </p>
         </div>
         
         {error && (
           <div className="bg-red-500/10 border border-red-500/50 rounded-lg p-3 text-red-500 text-sm">
             {error}
+          </div>
+        )}
+        {success && (
+          <div className="bg-green-500/10 border border-green-500/50 rounded-lg p-3 text-green-500 text-sm">
+            {success}
           </div>
         )}
 

@@ -27,7 +27,7 @@ function Body() {
   return (
     <div className="flex flex-col items-center px-2 md:px-10 py-8 space-y-8 bg-gradient-to-b from-black via-gray-900 to-black min-h-[calc(100vh-84px)] mt-[84px] font-sans">
       {/* Search Bar */}
-      <div className="w-full max-w-2xl sm:max-w-xl md:max-w-2xl relative mb-4 px-0 sm:px-2">
+      <div className="w-9/10 max-w-2xl sm:max-w-xl md:max-w-2xl relative mb-4 px-0 sm:px-2">
         <div className="absolute -inset-1 bg-gradient-to-r from-yellow-500/40 via-yellow-400/30 to-yellow-600/40 rounded-2xl blur-lg opacity-30"></div>
         <div className="relative flex items-center gap-1 sm:gap-2 bg-black/60 backdrop-blur-md rounded-2xl p-1 sm:p-2 border border-yellow-500/20 shadow-[0_8px_32px_0_rgba(234,179,8,0.15)]">
           <input

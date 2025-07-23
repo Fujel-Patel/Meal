@@ -1,21 +1,24 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import { FaUserCircle } from 'react-icons/fa';
 
 const SignIn = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [error, setError] = useState('');
+  const [success, setSuccess] = useState('');
 
   const handleSubmit = (e) => {
     e.preventDefault();
     setError('');
+    setSuccess('');
     if (!email || !password) {
       setError('Please fill in all fields');
       return;
     }
     // Placeholder for sign-in logic
     console.log('Sign In:', { email, password });
+    setSuccess('You have signed in successfully.');
   };
 
   return (
@@ -37,6 +40,11 @@ const SignIn = () => {
         {error && (
           <div className="bg-red-500/10 border border-red-500/50 rounded-lg p-3 text-red-500 text-sm">
             {error}
+          </div>
+        )}
+        {success && (
+          <div className="bg-green-500/10 border border-green-500/50 rounded-lg p-3 text-green-500 text-sm">
+            {success}
           </div>
         )}
 
@@ -71,9 +79,9 @@ const SignIn = () => {
                 required
               />
               <div className="flex items-center justify-end mt-2">
-                <a href="#" className="text-sm text-yellow-500 hover:text-yellow-400 transition-colors duration-300">
+                <NavLink to="/forgotPassword" className="text-sm text-yellow-500 hover:text-yellow-400 transition-colors duration-300">
                   Forgot password?
-                </a>
+                </NavLink>
               </div>
             </div>
           </div>
