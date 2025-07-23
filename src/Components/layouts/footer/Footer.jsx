@@ -10,7 +10,7 @@ const Footer = () => {
         
         {/* Logo and Description */}
         <div className="text-center sm:text-left lg:col-span-2">
-          <h2 className="text-2xl md:text-3xl font-extrabold bg-gradient-to-r from-yellow-400 to-yellow-600 bg-clip-text text-transparent mb-3 drop-shadow-lg font-sans">Foodie's Paradise</h2>
+          <h2 className="text-2xl md:text-3xl font-extrabold bg-gradient-to-r from-yellow-400 to-yellow-600 bg-clip-text text-transparent mb-3 drop-shadow-lg font-sans">Foodie's Delight</h2>
           <p className="text-yellow-200 text-sm md:text-base font-medium">
             Your go-to destination for discovering delicious food, exploring amazing restaurants, and sharing culinary experiences with fellow food lovers!</p>
         </div>
@@ -63,7 +63,7 @@ const Footer = () => {
       {/* Copyright Section */}
       <div className="max-w-6xl mx-auto">
         <div className="text-center mt-8 pt-6 border-t border-yellow-700/30">
-          <p className="text-yellow-300 text-xs md:text-sm font-medium">&copy; {new Date().getFullYear()} Foodie's Paradise. All Rights Reserved.</p>
+          <p className="text-yellow-300 text-xs md:text-sm font-medium">&copy; {new Date().getFullYear()} Foodie's Delight. All Rights Reserved.</p>
         </div>
       </div>
     </footer>
